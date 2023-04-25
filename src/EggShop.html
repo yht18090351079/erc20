@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Egg Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+        font-size: 25px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/web3.min.js"></script>
+    <script src="./js/EggShop.js"></script>
+  </head>
+  <body>
+    <h1>Egg Shop</h1>
+    <h1>All Eggs Prices And Remaining Quantity</h1>
+    <table id="eggTable">
+      <thead>
+        <tr>
+          <th>Egg Name</th>
+          <th>Price</th>
+          <th>Remaining Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <h2>Buy Eggs</h2>
+    <form id="buyEggForm">
+    <label for="eggName">Egg Name:</label>
+    <input type="text" id="eggName" name="eggName" required>
+    <label for="numOfEggs">Number of Eggs:</label>
+    <input type="number" id="numOfEggs" name="numOfEggs" required>
+    <button type="submit">Buy Egg</button>
+    </form>
+    <div id="buyEggResult1"></div>
+    <div id="buyEggResult2"></div>
+    <h2>Update Eggs</h2>
+    <form id="updateEggForm">
+      <label for="eggName3">Egg Name:</label>
+      <input type="text" id="eggName3" name="eggName3" required>
+      <label for="eggPrice">Egg Price:</label>
+      <input type="number" id="eggPrice" name="eggPrice" required>
+      <label for="numOfEggs2">Number of Eggs:</label>
+      <input type="updatenumber" id="numOfEggs2" name="numOfEggs2" required>
+      <button type="submit">Update Egg</button>
+    </form>
+    <div id="updateEggResult"></div>
+    <div id="updateEggResult2"></div>
+    <h2>Get Remaining Eggs</h2>
+    <form id="eggNumForm">
+      <label for="eggName2">Egg Name:</label>
+      <input type="text" id="eggName2" name="eggName2" required>
+      <button type="submit">Get Remaining Eggs</button>
+    </form>
+    <div id="eggNumResult"></div>
+    <h2>Get Egg Price</h2>
+    <form id="eggPriceForm">
+      <label for="eggName1">Egg Name:</label>
+      <input type="text" id="eggName1" name="eggName1" required>
+      <button type="submit">Get Egg Price</button>
+    </form>
+    <div id="eggPriceResult"></div>
+    <h2>Get All Eggs Bought by a Buyer</h2>
+    <form id="buyerForm">
+      <label for="buyerAddress">Buyer Address:</label>
+      <input type="text" id="buyerAddress" name="buyerAddress" required>
+      <button type="submit">Get Eggs</button>
+    </form>
+    <div id="buyerEggs"></div>
+    <div id="divbutton">
+      <button id="button" onclick="location.href='index.html'">主页面</button>
+      <button id="button" onclick="location.href='YHTDCP.html'">YHTDCP</button>
+  </div>
+  </body>
+</html>

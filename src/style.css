@@ -1,0 +1,121 @@
+table,input,button {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 30px;
+  font-size: 20px;
+}
+input{
+  width: 300px;
+}
+body {
+  font-family: Arial, sans-serif;
+  color:black;
+  font-size: 20px;
+}
+h1,h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: red;
+  font-size: 30px;
+}
+button[type="submit"] {
+  background-color: #2ecc71;
+  font-size: 20px;
+}
+div{
+  font-size: 20px;
+  height:auto;
+}
+table {
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+th,td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #eee;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  margin-top: 40px;
+}
+form {
+  margin-bottom: 20px;
+}
+label {
+  display: inline-block;
+  width: 210px;
+  margin-right: 10px;
+  text-align:center;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+button[type="submit"] {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+#balanceResult,#transferResult1,#transferResult2,#approveResult1,#approveResult2,#allowanceResult,#transferFromResult {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+button[type="submit"]:hover {
+  background-color: #27ae60;
+  animation: pulse 0.5s linear infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#divbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+  background-color: white;
+  }
+#button {
+  height: 50px;
+  font-size: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: skyblue;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left:50px
+}
+#button:hover {
+background-color: #FFA500;
+transform: scale(1.1);
+}

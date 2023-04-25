@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>YHT Digital Collectible Points</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+      table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+        font-size: 25px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/web3.min.js"></script>
+    <script src="./js/app.js"></script>
+
+  </head>
+  <body>
+    <h1>YHT Digital Collectible Points</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td id="name"></td>
+      </tr>
+      <tr>
+        <th>Symbol</th>
+        <td id="symbol"></td>
+      </tr>
+      <tr>
+        <th>Decimals</th>
+        <td id="decimals"></td>
+      </tr>
+      <tr>
+        <th>Total Supply</th>
+        <td id="totalSupply"></td>
+      </tr>
+    </table>
+    <h2>Account Balance</h2>
+    <form id="balanceForm">
+      <label for="balanceAddress">Address:</label>
+      <input type="text" id="balanceAddress" name="balanceAddress" required>
+      <button type="submit">Get Balance</button>
+    </form>
+    <div id="balanceResult"></div>
+    <h2>Transfer Tokens</h2>
+    <form id="transferForm">
+      <label for="recipientAddress">Recipient Address:</label>
+      <input type="text" id="recipientAddress" name="recipientAddress" required>
+      <label for="transferAmount">Amount:</label>
+      <input type="number" id="transferAmount" name="transferAmount" required>
+      <button type="submit">Transfer</button>
+    </form>
+    <div id="transferResult1"></div>
+    <div id="transferResult2"></div>
+    <h2>Approve Tokens</h2>
+    <form id="approveForm">
+      <label for="spenderAddress">Spender Address:</label>
+      <input type="text" id="spenderAddress" name="spenderAddress" required>
+      <label for="approveAmount">Amount:</label>
+      <input type="number" id="approveAmount" name="approveAmount" required>
+      <button type="submit">Approve</button>
+    </form>
+    <div id="approveResult1"></div>
+    <div id="approveResult2"></div>
+    <h2>Check Allowance</h2>
+    <form id="allowanceForm">
+      <label for="ownerAddress">Owner Address:</label>
+      <input type="text" id="ownerAddress" name="ownerAddress" required>
+      <label for="spenderAddress">Spender Address:</label>
+      <input type="text" id="spenderAddress" name="spenderAddress" required>
+      <button type="submit">Check Allowance</button>
+    </form>
+    <div id="allowanceResult"></div>
+    <h2>Transfer From</h2>
+    <form id="transferFromForm">
+      <label for="fromAddress">From Address:</label>
+      <input type="text" id="fromAddress" name="fromAddress" required>
+      <label for="ToAddress">To Address:</label>
+      <input type="text" id="ToAddress" name="ToAddress" required>
+      <label for="approveAmount">Amount:</label>
+      <input type="number" id="approveAmount" name="approveAmount" required>
+      <button type="submit">Transfer From</button>
+    </form>
+    <div id="transferFromResult"></div>
+    <h1>Egg Shop</h1>
+    <h1>All Eggs Prices And Remaining Quantity</h1>
+    <table id="eggTable">
+      <thead>
+        <tr>
+          <th>Egg Name</th>
+          <th>Price</th>
+          <th>Remaining Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <h2>Buy Eggs</h2>
+    <form id="buyEggForm">
+    <label for="eggName">Egg Name:</label>
+    <input type="text" id="eggName" name="eggName" required>
+    <label for="numOfEggs">Number of Eggs:</label>
+    <input type="number" id="numOfEggs" name="numOfEggs" required>
+    <button type="submit">Buy Egg</button>
+    </form>
+    <div id="buyEggResult1"></div>
+    <div id="buyEggResult2"></div>
+    <h2>Update Eggs</h2>
+    <form id="updateEggForm">
+      <label for="eggName3">Egg Name:</label>
+      <input type="text" id="eggName3" name="eggName3" required>
+      <label for="eggPrice">Egg Price:</label>
+      <input type="number" id="eggPrice" name="eggPrice" required>
+      <label for="numOfEggs2">Number of Eggs:</label>
+      <input type="updatenumber" id="numOfEggs2" name="numOfEggs2" required>
+      <button type="submit">Update Egg</button>
+    </form>
+    <div id="updateEggResult"></div>
+    <div id="updateEggResult2"></div>
+    <h2>Get Remaining Eggs</h2>
+    <form id="eggNumForm">
+      <label for="eggName2">Egg Name:</label>
+      <input type="text" id="eggName2" name="eggName2" required>
+      <button type="submit">Get Remaining Eggs</button>
+    </form>
+    <div id="eggNumResult"></div>
+    <h2>Get Egg Price</h2>
+    <form id="eggPriceForm">
+      <label for="eggName1">Egg Name:</label>
+      <input type="text" id="eggName1" name="eggName1" required>
+      <button type="submit">Get Egg Price</button>
+    </form>
+    <div id="eggPriceResult"></div>
+    <h2>Get All Eggs Bought by a Buyer</h2>
+    <form id="buyerForm">
+      <label for="buyerAddress">Buyer Address:</label>
+      <input type="text" id="buyerAddress" name="buyerAddress" required>
+      <button type="submit">Get Eggs</button>
+    </form>
+    <div id="buyerEggs"></div>
+    
+    
+
+  </body>
+</html>
