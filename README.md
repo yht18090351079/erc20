@@ -1,4 +1,5 @@
-# erc20
+# erc20，在master分支
+
 简单的dapp开发 erc20_eggshop
               
 
